@@ -98,19 +98,18 @@ static int request_handler(struct mg_connection *connection) {
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-
-    const char *options[] = {"listening_ports", "8080", NULL};
-    struct mg_callbacks callbacks = {0};
-    memset(&callbacks, 0, sizeof(callbacks));
-    
-    callbacks.begin_request = request_handler;
-    context = mg_start(&callbacks, (__bridge void *)(self), options);
-    
-    NSLog(@"Listening on %@:8080", [self localIp]);
     
     [[MovesAPI sharedInstance] performAuthorization:^{
         NSLog(@"We are connected and ready to make queries!");
+        
+        const char *options[] = {"listening_ports", "8080", NULL};
+        struct mg_callbacks callbacks = {0};
+        memset(&callbacks, 0, sizeof(callbacks));
+        
+        callbacks.begin_request = request_handler;
+        context = mg_start(&callbacks, (__bridge void *)(self), options);
+        
+        NSLog(@"Listening on %@:8080", [self localIp]);
     } failure:^(NSError *reason) {
         NSLog(@"We failed to connect: %@", [reason description]);
     }];
