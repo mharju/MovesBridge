@@ -1,0 +1,6 @@
+[submodule "AFNetworking"]
+	path = AFNetworking
+	url = https://github.com/AFNetworking/AFNetworking.git
+[submodule "mongoose"]
+	path = mongoose
+	url = https://github.com/valenok/mongoose.git

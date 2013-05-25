@@ -51,6 +51,17 @@ static void (^authorizationFailureCallback)(NSError *reason);
     return self;
 }
 
+#pragma mark General methods appending authorization key to requests
+
+- (void)getPath:(NSString *)path parameters:(NSDictionary *)parameters success:(void (^)(AFHTTPRequestOperation *, id))success failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure
+{
+    // TODO fix this to work with arbitraty request params
+    NSString *authorizedPath = [path stringByAppendingFormat:@"?access_token=%@", self.accessToken];
+    
+    [super getPath:authorizedPath parameters:parameters
+           success:success failure:failure];
+}
+
 #pragma mark OAuth2 authentication with Moves app
 
 - (void) performAuthorization:(void (^)())success failure:(void (^)(NSError *reason))failure
