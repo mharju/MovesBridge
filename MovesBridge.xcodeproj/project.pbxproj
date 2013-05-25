@@ -99,7 +99,6 @@
 		131D973E1734F5B1001D7567 = {
 			isa = PBXGroup;
 			children = (
-				137473C81750DC4600D4E22F /* libpthread.dylib */,
 				137473C41750D5E600D4E22F /* Mongoose */,
 				131D97701734F87D001D7567 /* AFNetworking */,
 				131D97501734F5B1001D7567 /* Classes */,
@@ -119,6 +118,7 @@
 		131D97491734F5B1001D7567 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				137473C81750DC4600D4E22F /* libpthread.dylib */,
 				130E21E917351B84002BAE3A /* MobileCoreServices.framework */,
 				130E21E717351B7F002BAE3A /* SystemConfiguration.framework */,
 				131D974A1734F5B1001D7567 /* UIKit.framework */,

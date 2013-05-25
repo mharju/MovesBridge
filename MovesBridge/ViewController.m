@@ -62,10 +62,13 @@ static int request_handler(struct mg_connection *connection) {
 @interface ViewController () {
     struct mg_context *context;
 }
+@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
+@property (weak, nonatomic) IBOutlet UILabel *urlLabel;
 @end
 
 @implementation ViewController
 
+// From: http://stackoverflow.com/questions/7072989/iphone-ipad-how-to-get-my-ip-address-programmatically
 - (NSString*) localIp
 {
     NSString *address = nil;

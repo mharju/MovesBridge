@@ -1,23 +1,82 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y1m-OJ-hBu" userLabel="Status">
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Status:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IS1-vQ-4fv">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Initializing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MB9-ha-3XV">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="URL:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsC-4x-Vhb">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Unknown" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2TA-z4-zSx">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="2TA-z4-zSx" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="BMq-f2-paf"/>
+                                    <constraint firstItem="IS1-vQ-4fv" firstAttribute="leading" secondItem="y1m-OJ-hBu" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="CsO-d8-KqJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="MB9-ha-3XV" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="LLc-aw-hgp"/>
+                                    <constraint firstItem="AsC-4x-Vhb" firstAttribute="leading" secondItem="y1m-OJ-hBu" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="PUF-Pu-jQW"/>
+                                    <constraint firstItem="IS1-vQ-4fv" firstAttribute="top" secondItem="y1m-OJ-hBu" secondAttribute="top" constant="20" symbolic="YES" type="default" id="QlY-ia-rGb"/>
+                                    <constraint firstItem="MB9-ha-3XV" firstAttribute="leading" secondItem="IS1-vQ-4fv" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="QrC-GQ-W6l"/>
+                                    <constraint firstAttribute="trailing" secondItem="2TA-z4-zSx" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="bw8-bt-mu2"/>
+                                    <constraint firstItem="AsC-4x-Vhb" firstAttribute="top" secondItem="IS1-vQ-4fv" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="hmy-cx-8Ah"/>
+                                    <constraint firstItem="MB9-ha-3XV" firstAttribute="top" secondItem="y1m-OJ-hBu" secondAttribute="top" constant="20" symbolic="YES" type="default" id="uEq-nS-dvX"/>
+                                    <constraint firstAttribute="bottom" secondItem="AsC-4x-Vhb" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="vwO-fk-eNo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="y1m-OJ-hBu" secondAttribute="centerX" type="user" id="9H2-ic-ZV7"/>
+                            <constraint firstAttribute="centerY" secondItem="y1m-OJ-hBu" secondAttribute="centerY" type="user" id="Paj-07-MvX"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="statusLabel" destination="MB9-ha-3XV" id="Y2H-R0-tsM"/>
+                        <outlet property="urlLabel" destination="2TA-z4-zSx" id="04f-bs-hLs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="statusLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="urlLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
