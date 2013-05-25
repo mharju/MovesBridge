@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		130E21E817351B7F002BAE3A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130E21E717351B7F002BAE3A /* SystemConfiguration.framework */; };
+		130E21EA17351B84002BAE3A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130E21E917351B84002BAE3A /* MobileCoreServices.framework */; };
 		131D974B1734F5B1001D7567 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131D974A1734F5B1001D7567 /* UIKit.framework */; };
 		131D974D1734F5B1001D7567 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131D974C1734F5B1001D7567 /* Foundation.framework */; };
 		131D974F1734F5B1001D7567 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131D974E1734F5B1001D7567 /* CoreGraphics.framework */; };
@@ -17,28 +19,59 @@
 		131D975F1734F5B2001D7567 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 131D975E1734F5B2001D7567 /* Default@2x.png */; };
 		131D97611734F5B2001D7567 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 131D97601734F5B2001D7567 /* Default-568h@2x.png */; };
 		131D97641734F5B2001D7567 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 131D97621734F5B2001D7567 /* MainStoryboard_iPhone.storyboard */; };
-		131D97671734F5B2001D7567 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 131D97651734F5B2001D7567 /* MainStoryboard_iPad.storyboard */; };
 		131D976A1734F5B2001D7567 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 131D97691734F5B2001D7567 /* ViewController.m */; };
+		131D97841734F8A1001D7567 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 131D97721734F8A1001D7567 /* AFHTTPClient.m */; };
+		131D97851734F8A1001D7567 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 131D97741734F8A1001D7567 /* AFHTTPRequestOperation.m */; };
+		131D97861734F8A1001D7567 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 131D97761734F8A1001D7567 /* AFImageRequestOperation.m */; };
+		131D97871734F8A1001D7567 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 131D97781734F8A1001D7567 /* AFJSONRequestOperation.m */; };
+		131D97881734F8A1001D7567 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 131D977A1734F8A1001D7567 /* AFNetworkActivityIndicatorManager.m */; };
+		131D97891734F8A1001D7567 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 131D977D1734F8A1001D7567 /* AFPropertyListRequestOperation.m */; };
+		131D978A1734F8A1001D7567 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 131D977F1734F8A1001D7567 /* AFURLConnectionOperation.m */; };
+		131D978B1734F8A1001D7567 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 131D97811734F8A1001D7567 /* AFXMLRequestOperation.m */; };
+		131D978C1734F8A1001D7567 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 131D97831734F8A1001D7567 /* UIImageView+AFNetworking.m */; };
+		131D978F1734F98D001D7567 /* MovesAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 131D978E1734F98D001D7567 /* MovesAPI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		131D97471734F5B1001D7567 /* MovesAnalysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovesAnalysis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		130E21E717351B7F002BAE3A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		130E21E917351B84002BAE3A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		131D97471734F5B1001D7567 /* MovesBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovesBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		131D974A1734F5B1001D7567 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		131D974C1734F5B1001D7567 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		131D974E1734F5B1001D7567 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		131D97521734F5B1001D7567 /* MovesAnalysis-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MovesAnalysis-Info.plist"; sourceTree = "<group>"; };
+		131D97521734F5B1001D7567 /* MovesBridge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MovesBridge-Info.plist"; sourceTree = "<group>"; };
 		131D97541734F5B1001D7567 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		131D97561734F5B1001D7567 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		131D97581734F5B1001D7567 /* MovesAnalysis-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MovesAnalysis-Prefix.pch"; sourceTree = "<group>"; };
+		131D97581734F5B1001D7567 /* MovesBridge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MovesBridge-Prefix.pch"; sourceTree = "<group>"; };
 		131D97591734F5B1001D7567 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		131D975A1734F5B1001D7567 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		131D975C1734F5B1001D7567 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		131D975E1734F5B2001D7567 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		131D97601734F5B2001D7567 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		131D97631734F5B2001D7567 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		131D97661734F5B2001D7567 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		131D97681734F5B2001D7567 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		131D97691734F5B2001D7567 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		131D97711734F8A1001D7567 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		131D97721734F8A1001D7567 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		131D97731734F8A1001D7567 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		131D97741734F8A1001D7567 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		131D97751734F8A1001D7567 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		131D97761734F8A1001D7567 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		131D97771734F8A1001D7567 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		131D97781734F8A1001D7567 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		131D97791734F8A1001D7567 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		131D977A1734F8A1001D7567 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		131D977B1734F8A1001D7567 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		131D977C1734F8A1001D7567 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		131D977D1734F8A1001D7567 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		131D977E1734F8A1001D7567 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		131D977F1734F8A1001D7567 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		131D97801734F8A1001D7567 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		131D97811734F8A1001D7567 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		131D97821734F8A1001D7567 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		131D97831734F8A1001D7567 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		131D978D1734F98D001D7567 /* MovesAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovesAPI.h; sourceTree = "<group>"; };
+		131D978E1734F98D001D7567 /* MovesAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovesAPI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				130E21EA17351B84002BAE3A /* MobileCoreServices.framework in Frameworks */,
+				130E21E817351B7F002BAE3A /* SystemConfiguration.framework in Frameworks */,
 				131D974B1734F5B1001D7567 /* UIKit.framework in Frameworks */,
 				131D974D1734F5B1001D7567 /* Foundation.framework in Frameworks */,
 				131D974F1734F5B1001D7567 /* CoreGraphics.framework in Frameworks */,
@@ -58,7 +93,8 @@
 		131D973E1734F5B1001D7567 = {
 			isa = PBXGroup;
 			children = (
-				131D97501734F5B1001D7567 /* MovesAnalysis */,
+				131D97701734F87D001D7567 /* AFNetworking */,
+				131D97501734F5B1001D7567 /* Classes */,
 				131D97491734F5B1001D7567 /* Frameworks */,
 				131D97481734F5B1001D7567 /* Products */,
 			);
@@ -67,7 +103,7 @@
 		131D97481734F5B1001D7567 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				131D97471734F5B1001D7567 /* MovesAnalysis.app */,
+				131D97471734F5B1001D7567 /* MovesBridge.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +111,8 @@
 		131D97491734F5B1001D7567 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				130E21E917351B84002BAE3A /* MobileCoreServices.framework */,
+				130E21E717351B7F002BAE3A /* SystemConfiguration.framework */,
 				131D974A1734F5B1001D7567 /* UIKit.framework */,
 				131D974C1734F5B1001D7567 /* Foundation.framework */,
 				131D974E1734F5B1001D7567 /* CoreGraphics.framework */,
@@ -82,27 +120,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		131D97501734F5B1001D7567 /* MovesAnalysis */ = {
+		131D97501734F5B1001D7567 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				131D97591734F5B1001D7567 /* AppDelegate.h */,
 				131D975A1734F5B1001D7567 /* AppDelegate.m */,
 				131D97621734F5B2001D7567 /* MainStoryboard_iPhone.storyboard */,
-				131D97651734F5B2001D7567 /* MainStoryboard_iPad.storyboard */,
 				131D97681734F5B2001D7567 /* ViewController.h */,
 				131D97691734F5B2001D7567 /* ViewController.m */,
 				131D97511734F5B1001D7567 /* Supporting Files */,
+				131D978D1734F98D001D7567 /* MovesAPI.h */,
+				131D978E1734F98D001D7567 /* MovesAPI.m */,
 			);
-			path = MovesAnalysis;
+			name = Classes;
+			path = MovesBridge;
 			sourceTree = "<group>";
 		};
 		131D97511734F5B1001D7567 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				131D97521734F5B1001D7567 /* MovesAnalysis-Info.plist */,
+				131D97521734F5B1001D7567 /* MovesBridge-Info.plist */,
 				131D97531734F5B1001D7567 /* InfoPlist.strings */,
 				131D97561734F5B1001D7567 /* main.m */,
-				131D97581734F5B1001D7567 /* MovesAnalysis-Prefix.pch */,
+				131D97581734F5B1001D7567 /* MovesBridge-Prefix.pch */,
 				131D975C1734F5B1001D7567 /* Default.png */,
 				131D975E1734F5B2001D7567 /* Default@2x.png */,
 				131D97601734F5B2001D7567 /* Default-568h@2x.png */,
@@ -110,12 +150,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		131D97701734F87D001D7567 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				131D97711734F8A1001D7567 /* AFHTTPClient.h */,
+				131D97721734F8A1001D7567 /* AFHTTPClient.m */,
+				131D97731734F8A1001D7567 /* AFHTTPRequestOperation.h */,
+				131D97741734F8A1001D7567 /* AFHTTPRequestOperation.m */,
+				131D97751734F8A1001D7567 /* AFImageRequestOperation.h */,
+				131D97761734F8A1001D7567 /* AFImageRequestOperation.m */,
+				131D97771734F8A1001D7567 /* AFJSONRequestOperation.h */,
+				131D97781734F8A1001D7567 /* AFJSONRequestOperation.m */,
+				131D97791734F8A1001D7567 /* AFNetworkActivityIndicatorManager.h */,
+				131D977A1734F8A1001D7567 /* AFNetworkActivityIndicatorManager.m */,
+				131D977B1734F8A1001D7567 /* AFNetworking.h */,
+				131D977C1734F8A1001D7567 /* AFPropertyListRequestOperation.h */,
+				131D977D1734F8A1001D7567 /* AFPropertyListRequestOperation.m */,
+				131D977E1734F8A1001D7567 /* AFURLConnectionOperation.h */,
+				131D977F1734F8A1001D7567 /* AFURLConnectionOperation.m */,
+				131D97801734F8A1001D7567 /* AFXMLRequestOperation.h */,
+				131D97811734F8A1001D7567 /* AFXMLRequestOperation.m */,
+				131D97821734F8A1001D7567 /* UIImageView+AFNetworking.h */,
+				131D97831734F8A1001D7567 /* UIImageView+AFNetworking.m */,
+			);
+			name = AFNetworking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		131D97461734F5B1001D7567 /* MovesAnalysis */ = {
+		131D97461734F5B1001D7567 /* MovesBridge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 131D976D1734F5B2001D7567 /* Build configuration list for PBXNativeTarget "MovesAnalysis" */;
+			buildConfigurationList = 131D976D1734F5B2001D7567 /* Build configuration list for PBXNativeTarget "MovesBridge" */;
 			buildPhases = (
 				131D97431734F5B1001D7567 /* Sources */,
 				131D97441734F5B1001D7567 /* Frameworks */,
@@ -125,9 +191,9 @@
 			);
 			dependencies = (
 			);
-			name = MovesAnalysis;
-			productName = MovesAnalysis;
-			productReference = 131D97471734F5B1001D7567 /* MovesAnalysis.app */;
+			name = MovesBridge;
+			productName = MovesBridge;
+			productReference = 131D97471734F5B1001D7567 /* MovesBridge.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -139,7 +205,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Mikko Harju";
 			};
-			buildConfigurationList = 131D97421734F5B1001D7567 /* Build configuration list for PBXProject "MovesAnalysis" */;
+			buildConfigurationList = 131D97421734F5B1001D7567 /* Build configuration list for PBXProject "MovesBridge" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -151,7 +217,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				131D97461734F5B1001D7567 /* MovesAnalysis */,
+				131D97461734F5B1001D7567 /* MovesBridge */,
 			);
 		};
 /* End PBXProject section */
@@ -166,7 +232,6 @@
 				131D975F1734F5B2001D7567 /* Default@2x.png in Resources */,
 				131D97611734F5B2001D7567 /* Default-568h@2x.png in Resources */,
 				131D97641734F5B2001D7567 /* MainStoryboard_iPhone.storyboard in Resources */,
-				131D97671734F5B2001D7567 /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +245,16 @@
 				131D97571734F5B1001D7567 /* main.m in Sources */,
 				131D975B1734F5B1001D7567 /* AppDelegate.m in Sources */,
 				131D976A1734F5B2001D7567 /* ViewController.m in Sources */,
+				131D97841734F8A1001D7567 /* AFHTTPClient.m in Sources */,
+				131D97851734F8A1001D7567 /* AFHTTPRequestOperation.m in Sources */,
+				131D97861734F8A1001D7567 /* AFImageRequestOperation.m in Sources */,
+				131D97871734F8A1001D7567 /* AFJSONRequestOperation.m in Sources */,
+				131D97881734F8A1001D7567 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				131D97891734F8A1001D7567 /* AFPropertyListRequestOperation.m in Sources */,
+				131D978A1734F8A1001D7567 /* AFURLConnectionOperation.m in Sources */,
+				131D978B1734F8A1001D7567 /* AFXMLRequestOperation.m in Sources */,
+				131D978C1734F8A1001D7567 /* UIImageView+AFNetworking.m in Sources */,
+				131D978F1734F98D001D7567 /* MovesAPI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,14 +275,6 @@
 				131D97631734F5B2001D7567 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		131D97651734F5B2001D7567 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				131D97661734F5B2001D7567 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -275,9 +342,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MovesAnalysis/MovesAnalysis-Prefix.pch";
-				INFOPLIST_FILE = "MovesAnalysis/MovesAnalysis-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MovesBridge/MovesBridge-Prefix.pch";
+				INFOPLIST_FILE = "MovesBridge/MovesBridge-Info.plist";
+				PRODUCT_NAME = MovesBridge;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -286,9 +354,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MovesAnalysis/MovesAnalysis-Prefix.pch";
-				INFOPLIST_FILE = "MovesAnalysis/MovesAnalysis-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MovesBridge/MovesBridge-Prefix.pch";
+				INFOPLIST_FILE = "MovesBridge/MovesBridge-Info.plist";
+				PRODUCT_NAME = MovesBridge;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -296,7 +365,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		131D97421734F5B1001D7567 /* Build configuration list for PBXProject "MovesAnalysis" */ = {
+		131D97421734F5B1001D7567 /* Build configuration list for PBXProject "MovesBridge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				131D976B1734F5B2001D7567 /* Debug */,
@@ -305,13 +374,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		131D976D1734F5B2001D7567 /* Build configuration list for PBXNativeTarget "MovesAnalysis" */ = {
+		131D976D1734F5B2001D7567 /* Build configuration list for PBXNativeTarget "MovesBridge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				131D976E1734F5B2001D7567 /* Debug */,
 				131D976F1734F5B2001D7567 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MovesAPI.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+    [[MovesAPI sharedInstance] performAuthorization:^{
+        NSLog(@"We are connected and ready to make queries!");
+    } failure:^(NSError *reason) {
+        NSLog(@"We failed to connect: %@", [reason description]);
+    }];
 }
 
 - (void)didReceiveMemoryWarning
