@@ -99,9 +99,8 @@
 		131D973E1734F5B1001D7567 = {
 			isa = PBXGroup;
 			children = (
-				137473C41750D5E600D4E22F /* Mongoose */,
-				131D97701734F87D001D7567 /* AFNetworking */,
 				131D97501734F5B1001D7567 /* Classes */,
+				137473CA1751011800D4E22F /* 3rd Party Libraries */,
 				131D97491734F5B1001D7567 /* Frameworks */,
 				131D97481734F5B1001D7567 /* Products */,
 			);
@@ -131,14 +130,14 @@
 		131D97501734F5B1001D7567 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				131D978D1734F98D001D7567 /* MovesAPI.h */,
+				131D978E1734F98D001D7567 /* MovesAPI.m */,
+				131D97681734F5B2001D7567 /* ViewController.h */,
+				131D97691734F5B2001D7567 /* ViewController.m */,
 				131D97591734F5B1001D7567 /* AppDelegate.h */,
 				131D975A1734F5B1001D7567 /* AppDelegate.m */,
 				131D97621734F5B2001D7567 /* MainStoryboard_iPhone.storyboard */,
-				131D97681734F5B2001D7567 /* ViewController.h */,
-				131D97691734F5B2001D7567 /* ViewController.m */,
 				131D97511734F5B1001D7567 /* Supporting Files */,
-				131D978D1734F98D001D7567 /* MovesAPI.h */,
-				131D978E1734F98D001D7567 /* MovesAPI.m */,
 			);
 			name = Classes;
 			path = MovesBridge;
@@ -191,6 +190,15 @@
 				137473C61750D5F500D4E22F /* mongoose.h */,
 			);
 			name = Mongoose;
+			sourceTree = "<group>";
+		};
+		137473CA1751011800D4E22F /* 3rd Party Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				137473C41750D5E600D4E22F /* Mongoose */,
+				131D97701734F87D001D7567 /* AFNetworking */,
+			);
+			name = "3rd Party Libraries";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -16,6 +16,7 @@
 #import "AFNetworking.h"
 #import "mongoose.h"
 
+static const char* LISTEN_PORT = "8080";
 static int content_length;
 
 static int request_handler(struct mg_connection *connection) {
@@ -102,19 +103,23 @@ static int request_handler(struct mg_connection *connection) {
 {
     [super viewDidLoad];
     
+    _statusLabel.text = @"Retrieving authkey...";
     [[MovesAPI sharedInstance] performAuthorization:^{
         NSLog(@"We are connected and ready to make queries!");
-        
-        const char *options[] = {"listening_ports", "8080", NULL};
+
+        _statusLabel.text = @"Initializing server";
+        const char *options[] = {"listening_ports", LISTEN_PORT, NULL};
         struct mg_callbacks callbacks = {0};
         memset(&callbacks, 0, sizeof(callbacks));
         
         callbacks.begin_request = request_handler;
         context = mg_start(&callbacks, (__bridge void *)(self), options);
         
-        NSLog(@"Listening on %@:8080", [self localIp]);
+        _statusLabel.text = @"Ready.";
+        _urlLabel.text = [NSString stringWithFormat:@"http://%@:%s", [self localIp], LISTEN_PORT];
     } failure:^(NSError *reason) {
-        NSLog(@"We failed to connect: %@", [reason description]);
+        _statusLabel.text = reason.description;
+        _urlLabel.text = @"Error";
     }];
 }
 
