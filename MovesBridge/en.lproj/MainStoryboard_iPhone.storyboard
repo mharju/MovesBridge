@@ -36,6 +36,17 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="896" translatesAutoresizingMaskIntoConstraints="NO" id="dX1-5i-G7z">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="896" id="9TK-fD-CIl"/>
+                                    <constraint firstAttribute="height" constant="34" id="WNi-t8-FBs"/>
+                                </constraints>
+                                <string key="text">This application uses data from Moves but is not endorsed
+or certified by Moves. Moves is a trademark of ProtoGeo Oy</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
+                                <color key="textColor" red="0.81568627449999997" green="0.82745098039999998" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.11372549019607843" green="0.2627450980392157" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -44,8 +55,10 @@
                             <constraint firstItem="Zkd-Z6-4FN" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="EtL-Fa-ekS"/>
                             <constraint firstItem="2TA-z4-zSx" firstAttribute="centerX" secondItem="Zkd-Z6-4FN" secondAttribute="centerX" type="default" id="OyH-JA-KJH"/>
                             <constraint firstAttribute="centerY" secondItem="MB9-ha-3XV" secondAttribute="centerY" type="user" id="S2d-4T-P5V"/>
+                            <constraint firstAttribute="centerX" secondItem="dX1-5i-G7z" secondAttribute="centerX" type="user" id="UKP-AU-uuW"/>
                             <constraint firstAttribute="centerX" secondItem="2TA-z4-zSx" secondAttribute="centerX" type="user" id="WtX-cL-ufB"/>
                             <constraint firstItem="2TA-z4-zSx" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Z1X-Pn-9zQ"/>
+                            <constraint firstAttribute="bottom" secondItem="dX1-5i-G7z" secondAttribute="bottom" constant="15" type="user" id="bSY-pA-MCo"/>
                             <constraint firstItem="MB9-ha-3XV" firstAttribute="top" secondItem="2TA-z4-zSx" secondAttribute="bottom" constant="12" type="user" id="guq-fR-eLM"/>
                         </constraints>
                     </view>
