@@ -10,7 +10,6 @@ To run the project just init the submodules, pull them and run the project in XC
     cat >MovesBridge/client-secret.h <<EOF
     #define kOauthClientId @"your-client-id"
     #define kOauthClientSecret @"your-secret"
-    #define kOauthRedirectUri @"moves-bridge%3A%2F%2Fauthorization-completed"
     EOF
     open MovesBridge.xcodeproj
 

@@ -11,6 +11,9 @@
 // Set keys to match your API settings here
 #import "client-secret.h"
 
+// Authorization redirect URI. Do not change!
+#define kOauthRedirectUri @"moves-bridge%3A%2F%2Fauthorization-completed"
+
 @interface MovesAPI : AFHTTPClient
 + (MovesAPI*)sharedInstance;
 
