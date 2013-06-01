@@ -14,20 +14,21 @@
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zkd-Z6-4FN">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="83" id="wiN-kd-14L"/>
+                                    <constraint firstAttribute="height" constant="43" id="wMD-Th-qhh"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Moves">
                                         <attributes>
                                             <color key="NSColor" red="0.20784313725490194" green="0.20784313725490194" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="42" name="HelveticaNeue-Medium"/>
+                                            <font key="NSFont" size="34" name="HelveticaNeue-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="Bridge">
                                         <attributes>
                                             <color key="NSColor" red="0.20784313725490194" green="0.20784313725490194" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="42" name="HelveticaNeue-Light"/>
+                                            <font key="NSFont" size="34" name="HelveticaNeue-Light"/>
+                                            <font key="NSOriginalFont" size="34" name="HelveticaNeue-Light"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
@@ -49,7 +50,7 @@ or certified by Moves. Moves is a trademark of ProtoGeo Oy</string>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="url" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2TA-z4-zSx">
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="4VN-4b-IqZ"/>
+                                            <constraint firstAttribute="height" constant="20" type="user" id="4VN-4b-IqZ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                         <color key="textColor" red="0.20784313725490194" green="0.20784313725490194" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
@@ -57,6 +58,9 @@ or certified by Moves. Moves is a trademark of ProtoGeo Oy</string>
                                         <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MB9-ha-3XV">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" type="user" id="dTe-gA-IGW"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                         <color key="textColor" red="0.45098039215686275" green="0.70196078431372544" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -65,21 +69,20 @@ or certified by Moves. Moves is a trademark of ProtoGeo Oy</string>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="MB9-ha-3XV" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="2DU-Ln-umJ"/>
                                     <constraint firstAttribute="trailing" secondItem="MB9-ha-3XV" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="5Nj-Ke-aLV"/>
-                                    <constraint firstItem="2TA-z4-zSx" firstAttribute="top" secondItem="u11-uj-UQV" secondAttribute="top" constant="20" symbolic="YES" type="user" id="IDk-Kl-QYj"/>
-                                    <constraint firstItem="MB9-ha-3XV" firstAttribute="top" secondItem="2TA-z4-zSx" secondAttribute="bottom" constant="15" type="user" id="Ijj-OB-ea9"/>
+                                    <constraint firstItem="2TA-z4-zSx" firstAttribute="top" secondItem="u11-uj-UQV" secondAttribute="top" constant="16" type="user" id="IDk-Kl-QYj"/>
+                                    <constraint firstItem="MB9-ha-3XV" firstAttribute="top" secondItem="2TA-z4-zSx" secondAttribute="bottom" constant="12" type="user" id="Ijj-OB-ea9"/>
                                     <constraint firstItem="2TA-z4-zSx" firstAttribute="leading" secondItem="u11-uj-UQV" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Psg-3T-QO2"/>
                                     <constraint firstAttribute="trailing" secondItem="2TA-z4-zSx" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="QxZ-FP-GlA"/>
                                     <constraint firstItem="MB9-ha-3XV" firstAttribute="leading" secondItem="u11-uj-UQV" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Xwy-GR-UD7"/>
-                                    <constraint firstAttribute="height" constant="96" type="user" id="yWb-wS-A7R"/>
+                                    <constraint firstAttribute="height" constant="80" type="user" id="yWb-wS-A7R"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Zkd-Z6-4FN" firstAttribute="top" secondItem="3" secondAttribute="top" constant="32" type="user" id="2sF-Rd-BKA"/>
                             <constraint firstAttribute="trailing" secondItem="Zkd-Z6-4FN" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="68G-fd-YHz"/>
-                            <constraint firstItem="Zkd-Z6-4FN" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="EtL-Fa-ekS"/>
                             <constraint firstAttribute="bottom" secondItem="dX1-5i-G7z" secondAttribute="bottom" constant="15" type="user" id="bSY-pA-MCo"/>
                             <constraint firstItem="u11-uj-UQV" firstAttribute="centerX" secondItem="dX1-5i-G7z" secondAttribute="centerX" type="default" id="m1Z-J1-XtN"/>
                             <constraint firstAttribute="centerX" secondItem="u11-uj-UQV" secondAttribute="centerX" type="user" id="vzi-B1-MLv"/>
@@ -88,6 +91,7 @@ or certified by Moves. Moves is a trademark of ProtoGeo Oy</string>
                             <constraint firstItem="u11-uj-UQV" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" type="user" id="zVG-xS-f0L"/>
                         </constraints>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="messageContainer" destination="u11-uj-UQV" id="ffJ-ft-Dba"/>
                         <outlet property="statusLabel" destination="MB9-ha-3XV" id="Y2H-R0-tsM"/>
