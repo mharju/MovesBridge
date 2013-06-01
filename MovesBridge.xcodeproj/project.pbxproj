@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		130858861759CB160082BCB4 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 130858851759CB160082BCB4 /* Icon@2x.png */; };
+		130858881759CB1B0082BCB4 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 130858871759CB1B0082BCB4 /* Icon.png */; };
 		130E21E817351B7F002BAE3A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130E21E717351B7F002BAE3A /* SystemConfiguration.framework */; };
 		130E21EA17351B84002BAE3A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130E21E917351B84002BAE3A /* MobileCoreServices.framework */; };
 		131D974B1734F5B1001D7567 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131D974A1734F5B1001D7567 /* UIKit.framework */; };
@@ -35,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		130858851759CB160082BCB4 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		130858871759CB1B0082BCB4 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		130E21E717351B7F002BAE3A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		130E21E917351B84002BAE3A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		131D97471734F5B1001D7567 /* MovesBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovesBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +103,8 @@
 		131D973E1734F5B1001D7567 = {
 			isa = PBXGroup;
 			children = (
+				130858871759CB1B0082BCB4 /* Icon.png */,
+				130858851759CB160082BCB4 /* Icon@2x.png */,
 				131D97501734F5B1001D7567 /* Classes */,
 				137473CA1751011800D4E22F /* 3rd Party Libraries */,
 				131D97491734F5B1001D7567 /* Frameworks */,
@@ -257,6 +263,8 @@
 				131D975F1734F5B2001D7567 /* Default@2x.png in Resources */,
 				131D97611734F5B2001D7567 /* Default-568h@2x.png in Resources */,
 				131D97641734F5B2001D7567 /* MainStoryboard_iPhone.storyboard in Resources */,
+				130858861759CB160082BCB4 /* Icon@2x.png in Resources */,
+				130858881759CB1B0082BCB4 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

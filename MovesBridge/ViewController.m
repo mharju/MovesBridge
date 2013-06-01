@@ -13,6 +13,8 @@
 #include <arpa/inet.h>
 #include <pthread.h>
 
+#import <QuartzCore/QuartzCore.h>
+
 #import "AFNetworking.h"
 #import "mongoose.h"
 
@@ -64,6 +66,7 @@ static int request_handler(struct mg_connection *connection) {
     struct mg_context *context;
 }
 @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
+@property (weak, nonatomic) IBOutlet UIView *messageContainer;
 @property (weak, nonatomic) IBOutlet UILabel *urlLabel;
 @end
 
@@ -102,6 +105,10 @@ static int request_handler(struct mg_connection *connection) {
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    _messageContainer.layer.borderWidth = 2;
+    _messageContainer.layer.borderColor = [UIColor colorWithRed:54.0/255.0 green:54.0/255.0 blue:54.0/255.0 alpha:1.0].CGColor;
+    _messageContainer.layer.cornerRadius = 12;
     
     _statusLabel.text = @"Retrieving authkey...";
     [[MovesAPI sharedInstance] performAuthorization:^{
