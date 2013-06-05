@@ -8,20 +8,11 @@
 
 #import "AFNetworking.h"
 #import "MovesAPI.h"
+#import "MovesAPI+Private.h"
+#import "MovesAPI+InternalAccessTokenRequester.h"
 
 static void (^authorizationSuccessCallback)();
 static void (^authorizationFailureCallback)(NSError *reason);
-
-@interface MovesAPI ()
-@property (strong, nonatomic) NSString *accessToken;
-@property (strong, nonatomic) NSString *refreshToken;
-@property (strong, nonatomic) NSDate *fetchTime;
-@property (strong, nonatomic) NSNumber *expiry;
-
-- (BOOL)hasValidAccessToken;
-- (void)requestOrRefreshAccessToken:(NSString*)code complete:(void (^)())complete
-                            failure:(void (^)(NSError* reason))failure;
-@end
 
 @implementation MovesAPI
 + (MovesAPI*)sharedInstance {
@@ -104,26 +95,6 @@ static void (^authorizationFailureCallback)(NSError *reason);
     }
 }
 
-
-- (void)requestOrRefreshAccessToken:(NSString*)code complete:(void (^)())complete failure:(void (^)(NSError* reason))failure
-{
-    NSString *path = [NSString stringWithFormat:@"/oauth/v1/access_token?grant_type=authorization_code&code=%@&client_id=%@&client_secret=%@&redirect_uri=%@", code, kOauthClientId, kOauthClientSecret, kOauthRedirectUri];
-    
-    if(self.accessToken) {
-        path = [NSString stringWithFormat:@"/oauth/v1/access_token?grant_type=refresh_token&refresh_token=%@&client_id=%@&client_secret=%@",
-                self.refreshToken, kOauthClientId, kOauthClientSecret];
-    }
-    
-    [self postPath:path parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        [self updateUserDefaultsWithAccessToken:responseObject[@"access_token"]
-                                   refreshToken:responseObject[@"refresh_token"]
-                                      andExpiry:responseObject[@"expires_in"]];
-        complete();
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Error: %@", error.userInfo);
-        failure(error);
-    }];
-}
 
 - (void) updateUserDefaultsWithAccessToken:(NSString*)accessToken refreshToken:(NSString*)refreshToken andExpiry:(NSNumber*)expiry {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];

@@ -34,6 +34,7 @@
 		137473C31750D5E100D4E22F /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 137473BA1750D5E100D4E22F /* UIImageView+AFNetworking.m */; };
 		137473C71750D5F500D4E22F /* mongoose.c in Sources */ = {isa = PBXBuildFile; fileRef = 137473C51750D5F500D4E22F /* mongoose.c */; };
 		137473C91750DC4600D4E22F /* libpthread.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 137473C81750DC4600D4E22F /* libpthread.dylib */; };
+		13A1D194175F98B0007F3DBA /* MovesAPI+InternalAccessTokenRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A1D193175F98B0007F3DBA /* MovesAPI+InternalAccessTokenRequester.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,9 @@
 		137473C51750D5F500D4E22F /* mongoose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mongoose.c; path = mongoose/mongoose.c; sourceTree = "<group>"; };
 		137473C61750D5F500D4E22F /* mongoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mongoose.h; path = mongoose/mongoose.h; sourceTree = "<group>"; };
 		137473C81750DC4600D4E22F /* libpthread.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpthread.dylib; path = usr/lib/libpthread.dylib; sourceTree = SDKROOT; };
+		13A1D192175F98B0007F3DBA /* MovesAPI+InternalAccessTokenRequester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MovesAPI+InternalAccessTokenRequester.h"; sourceTree = "<group>"; };
+		13A1D193175F98B0007F3DBA /* MovesAPI+InternalAccessTokenRequester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MovesAPI+InternalAccessTokenRequester.m"; sourceTree = "<group>"; };
+		13A1D195175F98E5007F3DBA /* MovesAPI+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MovesAPI+Private.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +140,11 @@
 		131D97501734F5B1001D7567 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				13A1D195175F98E5007F3DBA /* MovesAPI+Private.h */,
 				131D978D1734F98D001D7567 /* MovesAPI.h */,
 				131D978E1734F98D001D7567 /* MovesAPI.m */,
+				13A1D192175F98B0007F3DBA /* MovesAPI+InternalAccessTokenRequester.h */,
+				13A1D193175F98B0007F3DBA /* MovesAPI+InternalAccessTokenRequester.m */,
 				131D97681734F5B2001D7567 /* ViewController.h */,
 				131D97691734F5B2001D7567 /* ViewController.m */,
 				131D97591734F5B1001D7567 /* AppDelegate.h */,
@@ -289,6 +296,7 @@
 				137473C21750D5E100D4E22F /* AFXMLRequestOperation.m in Sources */,
 				137473C31750D5E100D4E22F /* UIImageView+AFNetworking.m in Sources */,
 				137473C71750D5F500D4E22F /* mongoose.c in Sources */,
+				13A1D194175F98B0007F3DBA /* MovesAPI+InternalAccessTokenRequester.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
